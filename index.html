@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – Votre Nom</title>
+    <meta
+      name="description"
+      content="Portfolio simple et responsive – projets, compétences et contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="Accueil">PN</a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-nav">
+          <ul>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a class="btn btn-primary" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="titre-hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 id="titre-hero">
+              Bonjour, je suis <span class="accent">Votre Nom</span>
+            </h1>
+            <p>
+              Développeur web débutant, je crée des interfaces propres, rapides
+              et accessibles. Découvrez mes projets et compétences ci-dessous.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+              <a class="btn btn-ghost" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="avatar">PN</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section" aria-labelledby="titre-projets">
+        <div class="container">
+          <h2 id="titre-projets" class="section-title">Projets</h2>
+          <div class="grid projects-grid">
+            <article class="card project-item">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Aperçu Projet 1"
+              ></div>
+              <div class="card-body">
+                <h3>Projet 1</h3>
+                <p>
+                  Courte description du projet, des technologies utilisées et du
+                  but.
+                </p>
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Voir</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card project-item">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Aperçu Projet 2"
+              ></div>
+              <div class="card-body">
+                <h3>Projet 2</h3>
+                <p>
+                  Courte description du projet, des technologies utilisées et du
+                  but.
+                </p>
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Voir</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="card project-item">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Aperçu Projet 3"
+              ></div>
+              <div class="card-body">
+                <h3>Projet 3</h3>
+                <p>
+                  Courte description du projet, des technologies utilisées et du
+                  but.
+                </p>
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Voir</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="competences"
+        class="section"
+        aria-labelledby="titre-competences"
+      >
+        <div class="container">
+          <h2 id="titre-competences" class="section-title">Compétences</h2>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3 / Responsive</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>Accessibilité</li>
+            <li>SEO de base</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="a-propos" class="section" aria-labelledby="titre-a-propos">
+        <div class="container">
+          <h2 id="titre-a-propos" class="section-title">À propos</h2>
+          <p>
+            Passionné par le web, j'apprends chaque jour à concevoir des
+            expériences simples et efficaces. Ouvert aux opportunités et
+            collaborations.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="titre-contact">
+        <div class="container">
+          <h2 id="titre-contact" class="section-title">Contact</h2>
+          <form
+            class="contact-form"
+            action="#"
+            method="post"
+            onsubmit="return false;"
+          >
+            <div class="form-row">
+              <label for="nom">Nom</label>
+              <input
+                id="nom"
+                name="nom"
+                type="text"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="vous@exemple.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message..."
+                required
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Votre Nom. Tous droits réservés.</p>
+        <a class="to-top" href="#top" aria-label="Retour en haut">↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
